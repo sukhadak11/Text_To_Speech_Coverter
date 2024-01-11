@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 20px; /* Adjust as needed */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #FF6B6B, #556270, #FF6B6B, #556270);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 15s ease infinite;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  h1 span {
+    padding: 15 px 15px;
+    color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  h1 span:hover {
+    background-color: #0056b3;
+  }
+  
+  h1 span:focus {
+    outline: none;
+  }
+  
+  textarea {
+    width: calc(100% - 20px);
+    min-height: 100px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #convert-button {
+    background-color: #007bff;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  #stop-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Interactive Styles */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+  
+  #convert-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #stop-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Animation Effects */
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
